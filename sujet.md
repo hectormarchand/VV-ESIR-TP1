@@ -37,6 +37,27 @@ Résolution : dans la méthode EntryIterator.remove(), la méthode currentEntry.
 
 ### Q3
 
+What are the concrete experiments they perform ?
+
+L'ingénierie du chaos est une technique permettant de répondre à l'exigence de résilience.
+Elle peut être utilisée pour lutter contre les pannes d'infrastructure, les pannes de réseau et les pannes d'application. Elle consiste à perturber régulièrement des instances aléatoires d’un système pour observer si d’autres services peuvent reprendre la charge de travail de celui qui est mis volontairement en panne.
+
+What are the requirements for these experiments ?
+
+Le prérequis principal est d’avoir un environnement stable que l’on peut perturber afin d’analyser sa capacité à réagir au problème. On observe la résilience d’un système face à des faiblesses inconnues.
+
+What are the variables they observe ? 
+
+Il faut définir précisément les variables que l’on souhaite observer : l’environnement technique, le support, la maintenance … Il faut aussi préciser les variables qui permettront de valider l’expérience et donc les résultats attendus. 
+
+
+What are the main results they obtained ?
+
+On simule donc des pannes en environnement réel avec des Chaos Monkey et on vérifie que le système continue à fonctionner. L’expérience permet donc de savoir s’il faut mettre en place de nouveaux plans d’action vis à vis d’une panne précise. S’il y a une surcharge d’un serveur alors il faut prévoir de répartir la charge sur un nouveau serveur.
+
+
+Netflix n’est pas la seule entreprise à utiliser le Chaos Engineering.
+En effet, Amazon a mis en place un “Gameday” pour tester la résilience du système et un Chaos Kong qui paralyse une partie du système. De même pour OUI.sncf avec son “Days of chaos''.
 
 
 ### Q4
