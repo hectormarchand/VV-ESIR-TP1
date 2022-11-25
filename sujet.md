@@ -62,5 +62,21 @@ En effet, Amazon a mis en place un “Gameday” pour tester la résilience du s
 
 ### Q4
 
+Le web assembly est le premier langage web qui délivre un certains nombres d’objectifs directement à l’utilisateur : rapide, portable (plusieurs browsers, os et devices) et compacte (pour réduire le temps de chargement). 
+Beaucoup de technologies existent déjà pour créer des applications web et ce papier montre la différence entre ces technologies et web assembly. 
+Le but du web assembly est de pouvoir faire de la programmation bas niveau (low-level) tout en garantissant une certaine sécurité en protégeant les données utilisateurs.
+
+Bien que le web assembly a été prouvé théoriquement, des bugs peuvent apparaître lors de l'exécution du code. C’est pourquoi, il est important de tester le langage.
+
 
 ### Q5
+
+**What are the main advantages of the mechanized specification ?**
+La spécification mécanisée a pour avantages de réduire le nombre de relations dans un langage afin d’obtenir un langage plus simple et facilement testable.
+
+**What other artifacts were derived from this mechanized specification ?**
+Les "soundness properties" sont des propriétés dérivées de la spécification mécanisée.
+
+**Does this new specification remove the need for testing ?**
+Les tests sont toujours nécessaires dans la spécification mécanisée, il reste toujours des erreurs à vérifier.
+
